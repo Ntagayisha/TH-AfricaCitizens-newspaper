@@ -1,0 +1,268 @@
+<---<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTINY</title>
+    <style>
+ body{
+   margin: 0;
+   padding: 0;
+   /* background-color: bisque; */
+ }
+
+ .header1 {
+   background-color: rgb(185, 172, 173);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-bottom-style : double;
+    position: relative;
+
+}
+
+.header1:hover{
+ background-color: rgb(194, 158, 162);
+ transition: ease-in;
+ transform: translateX(3px);
+
+ 
+}
+ .log{
+    margin-left: 2px;
+ }
+h1{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(19, 16, 16);
+     justify-content: center;
+}
+ .first-nav ul {
+    display: flex;        /* makes items horizontal */
+    list-style: none;     /* removes bullets */
+    gap: 25px;            /* space between items */
+    align-items: center;
+     
+}
+
+.first-nav li {
+    display: inline;      /* extra safety */
+    
+     
+}
+.login-btn{
+     
+    height: 30px;
+    width: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color:aliceblue;
+    color: rgb(55, 120, 138);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: rem;
+}
+ .login-btn:hover{
+    background-color: rgb(0, 21, 255);
+    color: #f5f5f5;
+    transition: ease-in;
+    transform: translateX( -3px);
+}
+
+.register-btn{
+    
+    height: 30px;
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn:hover{
+    background-color: red;
+    transform: translateX( -3px);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+                url('news paper image.jpg') no-repeat center/cover;
+
+    text-align: center;
+    padding-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+    border-top-color: rgb(26, 2, 47);
+    border-radius: 10px;
+    margin: 2px;
+}
+.home:hover{transform: translateX( -3px);
+    transition: ease-in-out;
+
+}
+
+
+.news {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     
+
+    text-align: center;
+    padding-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+     background-color: rgb(36, 39, 46);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.Intertainment {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     
+
+    text-align: center;
+    padding-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: rgb(36, 39, 46);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.Sport {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     
+
+    text-align: center;
+    padding-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+     background-color: rgb(36, 39, 46);
+    border-radius: 10px;
+    margin: 2px;
+}
+.About us {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: rgb(36, 39, 46);
+    border-radius: 10px;
+    margin: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header1">
+            <div class="log">
+                <a href="#"><img src="image.png" alt="log"  style="align-items: flex-start; width: 100px; height: 80px;"></a>
+             
+                <h1>East Africa Times</h1>
+            </div>
+            <nav class="first-nav">
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                      <li><a href="#" title="News">News</a></li>
+                        <li><a href="#" title="Sport">Sport</a></li>
+                          <li><a href="#" title="Entertainment">Entertainment</a></li>
+                            <li><a href="#" title="About us">About us</a></li>
+                </ul>
+                <button class="login-btn">login</button>
+                <button class="register-btn">register</button>
+
+            </nav>
+        </div>
+         
+    </div>
+    <!-- ===== HOME ===== -->
+<div class="home" >
+    <h2>🏠 Home (Breaking News)</h2>
+    <div class="card">
+        <img src="news1.jpg">
+        <h3>Headline Title</h3>
+        <p>Write your main breaking news here...</p>
+    </div>
+</div>
+
+<!-- ===== NEWS ===== -->
+<div class="news">
+    <h2>📰 Latest News</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="news.jpg">
+            <h3>News Title</h3>
+            <p>Write news content...</p>
+        </div>
+
+        <div class="card">
+            <img src="news.jpg">
+            <h3>News Title</h3>
+            <p>Write news content...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SPORT ===== -->
+<div class="sport">
+    <h2>⚽ Sports</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="sport.jpg">
+            <h3>Match Update</h3>
+            <p>Write sports news...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== ENTERTAINMENT ===== -->
+<div class="entertainment">
+    <h2>🎬 Entertainment</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="ent.jpg">
+            <h3>Celebrity News</h3>
+            <p>Write entertainment news...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div class="about">
+    <h2>📍 About Us</h2>
+    <p>
+        East Africa Times is your trusted source of news, sports, and entertainment across the region.
+    </p>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+    <p>© 2026 East Africa Times</p>
+</div>
+
+    
+</body>
+</html>*/
